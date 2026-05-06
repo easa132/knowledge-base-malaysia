@@ -27,7 +27,7 @@
 ├── 07-TikTok-TAP-MCN市场调研.md ← TikTok马来西亚TAP/MCN机构资质价格调研
 ├── 08-微信推送服务说明.md     ← GitHub Actions自动推送到微信的新闻服务
 ├── 09-马来西亚B2B机票平台与支付调研.md ← 马来西亚B2B平台/支付/返佣/GDS完整调研
-├── 10-海外品牌TripNexus Global商业计划书.md ← 今通×Flowin合资项目BP（PDF版在附件资料）
+├── 10-海外品牌TripNexus Global商业计划书.md ← 今通×Flowin合资项目BP（极简版+原图版均在附件资料）
 └── 附件资料/                  ← 存放合同、协议模板、宣传物料等
 ```
 
