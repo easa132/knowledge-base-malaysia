@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<title>TripNexus Global v1.1 — 商业计划书</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "SF Pro Display", "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #fff;
+  color: #1a1a2e;
+  line-height: 1.7;
+}
+
+/* ===== 封面 ===== */
+.cover {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 100px;
+  position: relative;
+}
+.cover .top-line {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+.cover .badge {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+.cover h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+.cover h1 .light {
+  font-weight: 300;
+  color: #666;
+}
+.cover h1 .accent {
+  color: #0f3460;
+}
+.cover .subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-top: 20px;
+  font-weight: 300;
+}
+.cover .line {
+  width: 60px;
+  height: 2px;
+  background: #1a1a2e;
+  margin: 35px 0;
+}
+.cover .meta {
+  color: #999;
+  font-size: 13px;
+  margin: 4px 0;
+}
+.cover .spacer {
+  flex: 1;
+}
+.cover .bottom {
+  margin-top: 80px;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+}
+.cover .bottom .company {
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+}
+.cover .bottom .tagline {
+  font-size: 12px;
+  color: #999;
+  margin-top: 4px;
+}
+
+/* ===== 内容 ===== */
+.page-wrap {
+  padding: 60px 100px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.page-wrap h2 {
+  font-size: 26px;
+  color: #1a1a2e;
+  font-weight: 700;
+  margin: 60px 0 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #1a1a2e;
+}
+.page-wrap h2:first-child { margin-top: 0; }
+.page-wrap h3 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  margin: 30px 0 12px;
+}
+.page-wrap p {
+  font-size: 15px;
+  color: #555;
+  margin: 12px 0;
+  line-height: 1.9;
+}
+.page-wrap p.lead {
+  font-size: 17px;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+/* ===== 表格 ===== */
+.page-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 13px;
+}
+.page-wrap th {
+  background: #f5f5f5;
+  color: #333;
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #ddd;
+}
+.page-wrap td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+.page-wrap tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+/* ===== 列表 ===== */
+.page-wrap ul {
+  padding-left: 20px;
+  margin: 15px 0;
+}
+.page-wrap li {
+  font-size: 15px;
+  color: #555;
+  margin: 8px 0;
+  line-height: 1.7;
+}
+
+/* ===== 代码/数据块 ===== */
+.page-wrap .data-block {
+  background: #f8f9fa;
+  border: 1px solid #eee;
+  padding: 20px 25px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+.page-wrap .data-block p {
+  margin: 6px 0;
+  color: #444;
+}
+
+/* ===== 分割线 ===== */
+.page-wrap hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 40px 0;
+}
+
+/* ===== 引文 ===== */
+.page-wrap .quote {
+  border-left: 3px solid #1a1a2e;
+  padding: 15px 25px;
+  margin: 25px 0;
+  background: #f8f9fa;
+  font-style: italic;
+  color: #666;
+}
+
+/* ===== 页脚 ===== */
+.page-footer {
+  text-align: center;
+  padding: 40px;
+  border-top: 1px solid #eee;
+  margin-top: 60px;
+}
+.page-footer p {
+  font-size: 12px;
+  color: #bbb;
+  margin: 4px 0;
+}
+.page-footer .brand {
+  color: #999;
+  font-weight: 600;
+  font-size: 13px;
+}
+</style>
+</head><body>
+
+<div class="cover">
+  <div class="top-line"></div>
+  <div class="badge">Business Plan · Version 1.1 · 2026</div>
+  <h1>TripNexus <span class="light">Global</span></h1>
+  <p class="subtitle">B2B Travel Marketplace · Travel SaaS · Payment Clearing</p>
+  <div class="line"></div>
+  <p class="meta">东南亚航旅 B2B 交易、系统与支付清算基础设施</p>
+  <p class="meta">致力于连接全球票源、代理商与支付系统</p>
+  <div class="spacer"></div>
+  <div class="bottom">
+    <p class="company">A Joint Venture of 今通 × Flowin</p>
+    <p class="tagline">Singapore · 2026</p>
+  </div>
+</div>
+
+<div class="page-wrap">
+
+<h2>执行摘要</h2>
+<p class="lead">TripNexus Global 是由今通与 Flowin 联合在新加坡设立的海外新品牌，面向东南亚市场，打造集 B2B Travel Marketplace、Travel SaaS、Payment Clearing 于一体的航旅 B2B 基础设施平台。</p>
+
+<h2>市场机会</h2>
+<p>东南亚在线旅游 GMV 预计 2025 年突破 USD 51B。市场持续恢复，在线化渗透率快速提升。这是一个高度碎片化的市场——旅行社、票代、TMC 分散经营，缺乏统一的交易与结算平台。</p>
+<div class="quote">机会不是再做一个 OTA，而是构建旅行分销背后的 B2B 基础设施。</div>
+
+<h2>核心痛点</h2>
+
+<h3>代理商</h3>
+<ul>
+  <li>缺乏稳定的全球票源接入渠道</li>
+  <li>手工开票、退改操作效率低下</li>
+  <li>无统一订单与财务管理系统</li>
+  <li>多币种收付款结算困难重重</li>
+  <li>每日平均浪费 2-3 小时在手工对账</li>
+</ul>
+
+<h3>TMC 差旅管理公司</h3>
+<ul>
+  <li>差旅合规管控工具缺失</li>
+  <li>报告与对账功能薄弱</li>
+  <li>与企业 ERP 系统集成复杂</li>
+  <li>实时费用追踪能力不足</li>
+  <li>企业差旅合规风险每年损失超 15%</li>
+</ul>
+
+<h3>供应商</h3>
+<ul>
+  <li>B2B 分销渠道高度碎片化</li>
+  <li>佣金结算周期长达 30-90 天</li>
+  <li>缺乏实时库存与销售数据</li>
+  <li>无统一的 B2B 直连 API 通道</li>
+  <li>过度依赖第三方 GDS 中间商</li>
+</ul>
+
+<h2>为什么现在做</h2>
+<p>四大结构性驱动因素同向共振：</p>
+<ul>
+  <li><strong>旅游强劲复苏</strong> — 东南亚旅游人次 2024 年已恢复至 2019 年的 112%</li>
+  <li><strong>数字化转型加速</strong> — 东南亚 SMB 数字化采购率年增 38%</li>
+  <li><strong>可对标成熟市场</strong> — Mondee、Navan 等模型已在美国验证，东南亚无对标玩家</li>
+  <li><strong>支付复杂性激增</strong> — 跨境 B2B 支付规模预计 2026 年达 $42B</li>
+</ul>
+
+<h2>解决方案 — 三层架构</h2>
+
+<div class="data-block">
+  <p><strong>Layer 1 · B2B Travel Marketplace 交易平台</strong></p>
+  <p>GDS 接入 (Amadeus/Sabre) · 航司直连 · 酒店床位 · 多渠道分销 API</p>
+</div>
+
+<div class="data-block">
+  <p><strong>Layer 2 · Travel SaaS 旅行企业管理系统</strong></p>
+  <p>订单管理 · 财务管理 · 差旅合规 · 报表分析 · 白标部署</p>
+</div>
+
+<div class="data-block">
+  <p><strong>Layer 3 · Payment Clearing 多币种支付清算</strong></p>
+  <p>多币种钱包 (SGD/MYR/THB/USD) · VCC 虚拟卡 · 自动清算 · 信用额度管理</p>
+</div>
+
+<div class="data-block">
+  <p><strong>Future Layer · VCC + AI 智能层</strong></p>
+  <p>虚拟信用卡全自动发卡 · AI 定价引擎 · 智能风控 · 自然语言预订助手 (Coming 2025)</p>
+</div>
+
+<h2>平台定位与竞品对比</h2>
+
+<table>
+  <tr><th>维度</th><th>OTA</th><th>传统 B2B</th><th>TripNexus</th></tr>
+  <tr><td>目标客户</td><td>C 端消费者</td><td>代理商</td><td>代理商 + TMC + 企业</td></tr>
+  <tr><td>核心能力</td><td>搜索预订 UI</td><td>票源分发</td><td>交易 + 系统 + 支付一体化</td></tr>
+  <tr><td>支付能力</td><td>基础在线支付</td><td>人工结算</td><td>多币种清算 + VCC</td></tr>
+  <tr><td>系统支持</td><td>无 B2B 工具</td><td>基础报价</td><td>全栈 SaaS + API</td></tr>
+  <tr><td>商业模式</td><td>佣金</td><td>价差</td><td>佣金 + 订阅 + 支付手续费</td></tr>
+  <tr><td>市场覆盖</td><td>全球 C 端</td><td>单一市场</td><td>东南亚 B2B 全覆盖</td></tr>
+</table>
+
+<h2>商业模式 — 四大收入池</h2>
+
+<div class="data-block">
+  <p><strong>1. 交易收入</strong> — 机票/酒店/保险佣金 + 价差，佣金率 2-5%</p>
+  <p><strong>2. SaaS 订阅收入</strong> — USD 299-999/月/户，Year 3 目标 500 户 → ARR $3.5M</p>
+  <p><strong>3. 支付手续费</strong> — 换汇手续费 + VCC 服务费，0.5-1.5% 费率</p>
+  <p><strong>4. 金融服务</strong> — 信用额度利息 + 风险服务费，年化 8-15%</p>
+</div>
+
+<p>Year 3 总收入目标：<strong>USD 8M+</strong></p>
+
+<h2>对标 Mondee</h2>
+<p>Mondee (NASDAQ: MOND) 作为美国 B2B 机票分销平台，上市估值 $1.2B。TripNexus 在东南亚市场对标 Mondee，但核心差异在于自建多币种清算 + VCC 体系——东南亚多货币环境（6+ 币种）、跨境结算复杂度远超美国单一市场，这是 TripNexus 的核心护城河。</p>
+
+<h2>东南亚进入策略</h2>
+<ul>
+  <li><strong>Phase 1</strong> (0-6月) — 新加坡：总部建立、MVP 开发、签约首批 20 家代理商</li>
+  <li><strong>Phase 2</strong> (6-12月) — 马来西亚：本地化、代理商社群营销、GMV 突破 $5M</li>
+  <li><strong>Phase 3</strong> (12-18月) — 泰国：入境旅游供应商对接、TMC 客户开发</li>
+  <li><strong>Phase 4</strong> (18-24月) — 印尼/越南：Pre-A 轮 $5M、GMV 目标 $80M</li>
+</ul>
+
+<h2>合资结构</h2>
+<p>今通 × Flowin 联合在新加坡注册成立合资公司。<strong>今通</strong>贡献技术资源（GDS 直连、票务系统、研发团队），<strong>Flowin</strong> 贡献合规与市场资源（MAS 牌照、东南亚渠道、本地关系网）。</p>
+
+<h2>技术架构</h2>
+<p>底层系统 IP 归各自所有，定制开发版本归 TripNexus Global。今通的票务系统和票源接口、蜂象云的 SaaS 和财务系统、Flowin 的支付清算系统、AeroCredix 的 VCC 风控模型分层集成，上层为 TripNexus 海外定制系统及品牌资产。</p>
+
+<hr>
+<p style="text-align:center;color:#bbb;font-size:12px;margin-top:40px;">注：以上内容摘要自原始PDF（20页），完整版包含架构图、对比表和详细财务数据，请参阅 PDF 原件。</p>
+
+</div>
+
+<div class="page-footer">
+  <p class="brand">TripNexus Global · Business Plan v1.1</p>
+  <p>A Joint Venture of 今通 × Flowin · Singapore</p>
+  <p style="margin-top:4px;">— 商业计划书 · 内部资料 —</p>
+</div>
+
+</body></html>
