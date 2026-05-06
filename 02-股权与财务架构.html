@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💰 股权与财务 - 马来今通项目知识库</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; display: flex; min-height: 100vh; background: #f5f7fa; }
+.sidebar { width: 260px; background: #1a202c; color: white; padding: 20px 0; position: fixed; top: 0; left: 0; height: 100vh; overflow-y: auto; }
+.sidebar h2 { padding: 0 20px 20px; font-size: 16px; border-bottom: 1px solid #2d3748; margin-bottom: 10px; }
+.sidebar ul { list-style: none; }
+.sidebar li { padding: 0; }
+.sidebar li a { display: block; padding: 10px 20px; color: #cbd5e0; text-decoration: none; font-size: 14px; transition: 0.2s; }
+.sidebar li a:hover { background: #2d3748; color: white; }
+.sidebar li.active a { background: #3182ce; color: white; font-weight: 600; }
+.content { margin-left: 260px; padding: 40px; max-width: 900px; width: 100%; }
+.content h1 { font-size: 28px; margin-bottom: 20px; color: #1a202c; }
+.content h2 { font-size: 22px; margin: 30px 0 15px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0; color: #2d3748; }
+.content h3 { font-size: 18px; margin: 25px 0 10px; color: #2d3748; }
+.content p { line-height: 1.8; margin-bottom: 15px; color: #4a5568; font-size: 15px; }
+.content table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+.content th { background: #edf2f7; padding: 12px; text-align: left; font-weight: 600; border: 1px solid #e2e8f0; }
+.content td { padding: 10px 12px; border: 1px solid #e2e8f0; }
+.content tr:nth-child(even) { background: #f7fafc; }
+.content ul, .content ol { margin: 10px 0 15px 20px; line-height: 1.8; }
+.content li { margin-bottom: 5px; color: #4a5568; }
+.content code { background: #edf2f7; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+.content pre { background: #1a202c; color: #e2e8f0; padding: 16px; border-radius: 8px; overflow-x: auto; margin: 15px 0; }
+.content pre code { background: transparent; color: inherit; padding: 0; }
+.content blockquote { border-left: 4px solid #3182ce; padding: 10px 20px; margin: 15px 0; background: #ebf8ff; border-radius: 0 8px 8px 0; }
+.content blockquote p { margin: 0; color: #2b6cb0; }
+.content hr { border: none; border-top: 1px solid #e2e8f0; margin: 30px 0; }
+.content strong { color: #2d3748; }
+.content a { color: #3182ce; text-decoration: none; }
+.content a:hover { text-decoration: underline; }
+@media (max-width: 768px) { .sidebar { width: 100%; height: auto; position: relative; } .content { margin-left: 0; padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="sidebar">
+  <h2>📂 马来今通知识库</h2>
+  <ul><li><a href="README.html">📋 总览导航</a></li>
+<li><a href="01-项目计划书.html">📄 项目计划书</a></li>
+<li class="active"><a href="02-股权与财务架构.html">💰 股权与财务</a></li>
+<li><a href="03-大学合作方案.html">🎓 大学合作方案</a></li>
+<li><a href="04-课程大纲.html">📚 课程大纲</a></li>
+<li><a href="05-补充知识库-刘桢版.html">📖 补充知识库</a></li>
+<li><a href="06-竞争对手调研报告.html">🔍 竞争对手调研</a></li>
+<li><a href="07-TikTok-TAP-MCN市场调研.html">📱 TikTok TAP/MCN调研</a></li>
+<li><a href="08-微信推送服务说明.html">📬 微信推送服务</a></li>
+<li><a href="09-马来西亚B2B机票平台与支付调研.html">✈️ B2B机票平台调研</a></li></ul>
+</div>
+<div class="content">
+<h1>02 - 股权架构与财务预算</h1>
+<hr>
+<h2>推荐股权结构（总股本100%）</h2>
+<table>
+<thead>
+<tr>
+<th>股东</th>
+<th>股权比例</th>
+<th>角色与贡献</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>刘总</td>
+<td><strong>40%</strong></td>
+<td>主要出资方+战略资源</td>
+</tr>
+<tr>
+<td>史总</td>
+<td><strong>40%</strong></td>
+<td>平台股东+API/技术背书</td>
+</tr>
+<tr>
+<td>刘桢</td>
+<td><strong>20%</strong>（含股权）</td>
+<td>法人及项目总负责人，不出资</td>
+</tr>
+</tbody></table>
+<h3>未来团队股权预留</h3>
+<ul>
+<li>额外预留 <strong>10% ESOP池</strong>（员工股权激励池）</li>
+<li>从刘/史/刘桢三方同比例稀释</li>
+<li>用于核心营销人员/大学合作专员/技术对接人员（第2-3年逐步发放）</li>
+</ul>
+<h3>调整后最终股权比例（建议）</h3>
+<table>
+<thead>
+<tr>
+<th>股东</th>
+<th>最终比例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>刘总</td>
+<td>35%</td>
+</tr>
+<tr>
+<td>史总</td>
+<td>35%</td>
+</tr>
+<tr>
+<td>刘桢</td>
+<td>18%</td>
+</tr>
+<tr>
+<td>团队</td>
+<td>12%</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>刘桢的薪酬与分红机制</h2>
+<h3>基础底薪</h3>
+<ul>
+<li><strong>RM12,000/月</strong>（约人民币20,000元，1 MYR≈1.72 RMB）</li>
+<li>包含EPF/SOCSO等本地社保</li>
+<li>理由：作为法人+负责人，高于普通营销主管，体现责任权重</li>
+</ul>
+<h3>绩效奖金</h3>
+<ul>
+<li>每月/季度根据KPI（交易额、会员增长、返利控制）额外 <strong>10-20%底薪</strong></li>
+</ul>
+<h3>分红比例</h3>
+<ul>
+<li>按股权20%享有公司税后利润分红（每年或每半年分一次，优先覆盖运营成本后）</li>
+</ul>
+<h3>退出/调整机制</h3>
+<ul>
+<li>若项目3年内达预期规模，刘桢可协商增持至25%</li>
+<li>若需引入新投资，优先稀释刘总/史总部分</li>
+</ul>
+<blockquote>
+<p>建议由专业律师（马来+中国）起草股东协议、法人授权书及ESOP计划。</p>
+</blockquote>
+<hr>
+<h2>6个月投资预算明细</h2>
+<p><strong>总投资估算</strong>：RM180,000-250,000（约人民币31万-43万元）</p>
+<blockquote>
+<p>保守估算，实际可根据办公室规模、人员数量微调；不含平台核心开发大额成本，因系国内内部修改。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>项目</th>
+<th>费用（MYR）</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>公司注册及合规（一次性）</td>
+<td>RM3,000-5,000</td>
+<td>SSM注册费+公司秘书+注册地址+银行开户+基本法律文件</td>
+</tr>
+<tr>
+<td>2</td>
+<td>办公室租金及水电网络（6个月）</td>
+<td>RM24,000-36,000</td>
+<td>小型办公室/serviced office，RM4,000-6,000/月</td>
+</tr>
+<tr>
+<td>3</td>
+<td>人员薪酬及社保（6个月）</td>
+<td>RM120,000-150,000</td>
+<td>3名本地营销（RM4,500-5,500/人/月）+刘桢底薪（RM12,000/月）+EPF/SOCSO</td>
+</tr>
+<tr>
+<td>4</td>
+<td>营销推广及培训（6个月）</td>
+<td>RM15,000-25,000</td>
+<td>TikTok达人招募、商会免费培训、旅行社拜访、材料打印、初期广告</td>
+</tr>
+<tr>
+<td>5</td>
+<td>即时通讯工具开发协调及测试</td>
+<td>RM10,000-15,000</td>
+<td>国内团队修改成本分摊+本地测试服务器/集成</td>
+</tr>
+<tr>
+<td>6</td>
+<td>大学合作及协议费用</td>
+<td>RM5,000-8,000</td>
+<td>课程方案制作、协议律师费、首次联合活动</td>
+</tr>
+<tr>
+<td>7</td>
+<td>杂费及备用</td>
+<td>RM8,000-12,000</td>
+<td>签证、差旅、税务初期、保险等</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>总计</strong></td>
+<td><strong>RM185,000-251,000</strong></td>
+<td><strong>约32万-43万元人民币</strong></td>
+</tr>
+</tbody></table>
+<p><strong>投资回收预期</strong>：第6-9个月开始通过会员费+机票交易佣金/返利差价产生收入，第6个月有望实现盈亏平衡（依赖会员增长速度）。</p>
+<h3>建议</h3>
+<ol>
+<li>三方确认股权架构及出资比例后，立即启动公司注册（可委托马来专业秘书公司，1周内完成）</li>
+<li>细化课程大纲、合作协议模板、KPI Excel表、月度预算表或模拟财务模型</li>
+</ol>
+
+<hr>
+<p style="text-align:center;color:#a0aec0;font-size:13px;margin-top:40px;">
+  马来西亚今通国际（今日天下通）B2B平台海外拓展项目知识库 · 最后更新：2026年5月
+</p>
+</div>
+</body>
+</html>

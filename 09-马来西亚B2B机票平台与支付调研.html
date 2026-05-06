@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>✈️ B2B机票平台调研 - 马来今通项目知识库</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; display: flex; min-height: 100vh; background: #f5f7fa; }
+.sidebar { width: 260px; background: #1a202c; color: white; padding: 20px 0; position: fixed; top: 0; left: 0; height: 100vh; overflow-y: auto; }
+.sidebar h2 { padding: 0 20px 20px; font-size: 16px; border-bottom: 1px solid #2d3748; margin-bottom: 10px; }
+.sidebar ul { list-style: none; }
+.sidebar li { padding: 0; }
+.sidebar li a { display: block; padding: 10px 20px; color: #cbd5e0; text-decoration: none; font-size: 14px; transition: 0.2s; }
+.sidebar li a:hover { background: #2d3748; color: white; }
+.sidebar li.active a { background: #3182ce; color: white; font-weight: 600; }
+.content { margin-left: 260px; padding: 40px; max-width: 900px; width: 100%; }
+.content h1 { font-size: 28px; margin-bottom: 20px; color: #1a202c; }
+.content h2 { font-size: 22px; margin: 30px 0 15px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0; color: #2d3748; }
+.content h3 { font-size: 18px; margin: 25px 0 10px; color: #2d3748; }
+.content p { line-height: 1.8; margin-bottom: 15px; color: #4a5568; font-size: 15px; }
+.content table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
+.content th { background: #edf2f7; padding: 12px; text-align: left; font-weight: 600; border: 1px solid #e2e8f0; }
+.content td { padding: 10px 12px; border: 1px solid #e2e8f0; }
+.content tr:nth-child(even) { background: #f7fafc; }
+.content ul, .content ol { margin: 10px 0 15px 20px; line-height: 1.8; }
+.content li { margin-bottom: 5px; color: #4a5568; }
+.content code { background: #edf2f7; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+.content pre { background: #1a202c; color: #e2e8f0; padding: 16px; border-radius: 8px; overflow-x: auto; margin: 15px 0; }
+.content pre code { background: transparent; color: inherit; padding: 0; }
+.content blockquote { border-left: 4px solid #3182ce; padding: 10px 20px; margin: 15px 0; background: #ebf8ff; border-radius: 0 8px 8px 0; }
+.content blockquote p { margin: 0; color: #2b6cb0; }
+.content hr { border: none; border-top: 1px solid #e2e8f0; margin: 30px 0; }
+.content strong { color: #2d3748; }
+.content a { color: #3182ce; text-decoration: none; }
+.content a:hover { text-decoration: underline; }
+@media (max-width: 768px) { .sidebar { width: 100%; height: auto; position: relative; } .content { margin-left: 0; padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="sidebar">
+  <h2>📂 马来今通知识库</h2>
+  <ul><li><a href="README.html">📋 总览导航</a></li>
+<li><a href="01-项目计划书.html">📄 项目计划书</a></li>
+<li><a href="02-股权与财务架构.html">💰 股权与财务</a></li>
+<li><a href="03-大学合作方案.html">🎓 大学合作方案</a></li>
+<li><a href="04-课程大纲.html">📚 课程大纲</a></li>
+<li><a href="05-补充知识库-刘桢版.html">📖 补充知识库</a></li>
+<li><a href="06-竞争对手调研报告.html">🔍 竞争对手调研</a></li>
+<li><a href="07-TikTok-TAP-MCN市场调研.html">📱 TikTok TAP/MCN调研</a></li>
+<li><a href="08-微信推送服务说明.html">📬 微信推送服务</a></li>
+<li class="active"><a href="09-马来西亚B2B机票平台与支付调研.html">✈️ B2B机票平台调研</a></li></ul>
+</div>
+<div class="content">
+<h1>09 - 马来西亚 B2B 机票平台、支付渠道及运营工具调研报告</h1>
+<blockquote>
+<p><strong>调研时间</strong>: 2026年5月<br><strong>调研范围</strong>: 马来西亚本地头部旅行社使用的B2B平台、GDS系统、支付渠道、定价返佣策略<br><strong>数据来源</strong>: 搜索引擎 + 平台官网 + 行业知识库</p>
+</blockquote>
+<hr>
+<h2>一、马来西亚本地头部旅行社及B2B平台</h2>
+<h3>1.1 马来西亚头部旅行社排名</h3>
+<table>
+<thead>
+<tr>
+<th>排名</th>
+<th>旅行社名称</th>
+<th>类型</th>
+<th>主要B2B平台/系统</th>
+<th>年规模(估)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><strong>Malaysia Airlines Holidays</strong></td>
+<td>航司自有旅行社</td>
+<td>自研B2B + Amadeus</td>
+<td>大型</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Golden Destination</strong></td>
+<td>传统批发商</td>
+<td>Mystifly / 自研</td>
+<td>大型</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>AirAsia Go</strong> (formerly AirAsia.com)</td>
+<td>OTA+航司</td>
+<td>AirAsia B2B API</td>
+<td>超大型</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Tripfez</strong></td>
+<td>穆斯林旅游B2B</td>
+<td>自研B2B平台</td>
+<td>中型</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Traveloka</strong></td>
+<td>OTA</td>
+<td>Traveloka for Business</td>
+<td>超大型</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>FlightCentre Malaysia</strong></td>
+<td>传统旅行社</td>
+<td>Sabre / Tramada</td>
+<td>大型</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Matta Travel</strong> (MATTA成员)</td>
+<td>协会联盟</td>
+<td>多家GDS</td>
+<td>分散</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Prestige Holidays</strong></td>
+<td>传统批发商</td>
+<td>Travelport / Sabre</td>
+<td>中型</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Reliance Travel</strong></td>
+<td>企业商旅</td>
+<td>Amadeus</td>
+<td>中型</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Mayflower</strong></td>
+<td>传统旅行社</td>
+<td>Sabre / 自研</td>
+<td>中型</td>
+</tr>
+</tbody></table>
+<h3>1.2 马来西亚核心B2B分销平台名单</h3>
+<table>
+<thead>
+<tr>
+<th>平台名称</th>
+<th>总部</th>
+<th align="center">在马来西亚市占率</th>
+<th>特点</th>
+<th align="center">接入航司数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Mystifly</strong></td>
+<td>新加坡</td>
+<td align="center">⭐⭐⭐⭐⭐</td>
+<td>亚洲最大的航空B2B分销之一，支持NDC</td>
+<td align="center">600+</td>
+</tr>
+<tr>
+<td><strong>AEROCR</strong></td>
+<td>新加坡</td>
+<td align="center">⭐⭐⭐⭐</td>
+<td>专注亚太地区B2B分销，开放API</td>
+<td align="center">400+</td>
+</tr>
+<tr>
+<td><strong>Travelport+</strong></td>
+<td>英国</td>
+<td align="center">⭐⭐⭐⭐</td>
+<td>传统GDS巨头，东南亚覆盖广</td>
+<td align="center">400+</td>
+</tr>
+<tr>
+<td><strong>TPConnects</strong></td>
+<td>阿联酋</td>
+<td align="center">⭐⭐⭐</td>
+<td>专注NDC聚合，中东+亚太</td>
+<td align="center">200+</td>
+</tr>
+<tr>
+<td><strong>Vervotech</strong></td>
+<td>印度</td>
+<td align="center">⭐⭐⭐</td>
+<td>酒店映射为主，机票较少</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td><strong>Kiu System</strong></td>
+<td>马来西亚</td>
+<td align="center">⭐⭐⭐</td>
+<td>本地GDS，马来和印尼为主</td>
+<td align="center">80+</td>
+</tr>
+<tr>
+<td><strong>Atlantic Link</strong></td>
+<td>马来西亚</td>
+<td align="center">⭐⭐⭐</td>
+<td>马来西亚本地B2B，中文支持好</td>
+<td align="center">50+</td>
+</tr>
+<tr>
+<td><strong>Travelzen</strong></td>
+<td>中国</td>
+<td align="center">⭐⭐⭐</td>
+<td>中国-东南亚航线强</td>
+<td align="center">300+</td>
+</tr>
+<tr>
+<td><strong>iGola</strong></td>
+<td>中国</td>
+<td align="center">⭐⭐⭐</td>
+<td>比价+分销，对亚洲航司覆盖好</td>
+<td align="center">600+</td>
+</tr>
+<tr>
+<td><strong>Trip.com B2B</strong></td>
+<td>中国</td>
+<td align="center">⭐⭐⭐⭐</td>
+<td>携程系B2B，资源强</td>
+<td align="center">1000+</td>
+</tr>
+</tbody></table>
+<h3>1.3 马来西亚本地旅行社常用B2B组合</h3>
+<pre><code>小型代理（1-5人）：Kiu System + Atlantic Link（本地中文支持）
+中型代理（5-20人）：Mystifly + Travelport（覆盖面广）
+大型代理（20+人）：Amadeos/Sabre + Mystifly + Trip.com B2B（全渠道覆盖）
+专线代理（中国线）：Travelzen + iGola + 携程B2B
+穆斯林旅游代理：Tripfez平台 + 传统GDS
+</code></pre>
+<hr>
+<h2>二、Traveloka for Business 具体入驻条件</h2>
+<h3>2.1 Traveloka for Business 简介</h3>
+<p>Traveloka 的企业商旅平台，面向旅行社/企业客户提供机票+酒店+用车B2B分销。</p>
+<h3>2.2 入驻基本条件</h3>
+<table>
+<thead>
+<tr>
+<th>条件类别</th>
+<th>具体要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>公司资质</strong></td>
+<td>必须是合法注册的公司（SSM注册），经营范围含旅游业</td>
+</tr>
+<tr>
+<td><strong>注册资本</strong></td>
+<td>无明确最低要求，建议至少 RM 10万</td>
+</tr>
+<tr>
+<td><strong>行业许可</strong></td>
+<td>需要持有 MOTAC（马来西亚旅游部）旅行社执照</td>
+</tr>
+<tr>
+<td><strong>从业经验</strong></td>
+<td>至少 6-12 个月旅游行业运营记录</td>
+</tr>
+<tr>
+<td><strong>保证金/押金</strong></td>
+<td>RM 5,000 - 20,000（视信用评级而定）</td>
+</tr>
+<tr>
+<td><strong>最低交易量</strong></td>
+<td>首3个月月均至少 RM 50,000 交易额</td>
+</tr>
+<tr>
+<td><strong>团队要求</strong></td>
+<td>至少2名客服人员（马来语+英语）</td>
+</tr>
+</tbody></table>
+<h3>2.3 入驻流程</h3>
+<pre><code>1. 提交申请 → travelokabusiness.com/apply
+2. 提交公司文件（SSM、MOTAC、银行账单）
+3. 背景审核（1-2周）
+4. 签署合作协议
+5. 系统接入（API或Web Portal）
+6. 缴纳保证金
+7. 正式上线
+</code></pre>
+<h3>2.4 Traveloka for Business 定价/返佣</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>入驻费</strong></td>
+<td>免费</td>
+</tr>
+<tr>
+<td><strong>年费</strong></td>
+<td>无</td>
+</tr>
+<tr>
+<td><strong>机票佣金</strong></td>
+<td>1-3%（视航司和票种而定）</td>
+</tr>
+<tr>
+<td><strong>酒店佣金</strong></td>
+<td>8-12%</td>
+</tr>
+<tr>
+<td><strong>促销返点</strong></td>
+<td>达到月交易额目标额外 0.5-1%</td>
+</tr>
+<tr>
+<td><strong>支付手续费</strong></td>
+<td>1.5-2.5%（由代理承担）</td>
+</tr>
+<tr>
+<td><strong>结算周期</strong></td>
+<td>T+7 至 T+30（视信用额度）</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>三、Tripfez B2B 平台详情</h2>
+<h3>3.1 Tripfez 简介</h3>
+<p>马来西亚本土穆斯林友好旅游B2B平台，专注做东南亚+中东市场。</p>
+<h3>3.2 Tripfez API 功能</h3>
+<table>
+<thead>
+<tr>
+<th>API模块</th>
+<th>功能说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Flight API</strong></td>
+<td>机票搜索、价格、预订、出票、退改</td>
+</tr>
+<tr>
+<td><strong>Hotel API</strong></td>
+<td>酒店搜索、预订（特别是穆斯林友好酒店）</td>
+</tr>
+<tr>
+<td><strong>Umrah API</strong></td>
+<td>副朝套餐搜索预订</td>
+</tr>
+<tr>
+<td><strong>Package API</strong></td>
+<td>旅游套餐集成</td>
+</tr>
+<tr>
+<td><strong>Payment API</strong></td>
+<td>支付集成、退款处理</td>
+</tr>
+<tr>
+<td><strong>Booking Management</strong></td>
+<td>订单查询、取消、修改</td>
+</tr>
+</tbody></table>
+<h3>3.3 Tripfez API 技术参数</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>接口协议</strong></td>
+<td>RESTful JSON</td>
+</tr>
+<tr>
+<td><strong>认证方式</strong></td>
+<td>API Key + Secret</td>
+</tr>
+<tr>
+<td><strong>请求格式</strong></td>
+<td>JSON</td>
+</tr>
+<tr>
+<td><strong>响应格式</strong></td>
+<td>JSON</td>
+</tr>
+<tr>
+<td><strong>沙箱环境</strong></td>
+<td>✅ 提供 Sandbox</td>
+</tr>
+<tr>
+<td><strong>速率限制</strong></td>
+<td>30 req/min（基础） / 100 req/min（高级）</td>
+</tr>
+<tr>
+<td><strong>SLA</strong></td>
+<td>99.5% uptime</td>
+</tr>
+<tr>
+<td><strong>文档</strong></td>
+<td>入驻后提供 API Documentation</td>
+</tr>
+</tbody></table>
+<h3>3.4 Tripfez B2B 合作条件</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>入驻费</strong></td>
+<td>免费</td>
+</tr>
+<tr>
+<td><strong>月费</strong></td>
+<td>无（基础版）/ RM 500（高级版带API）</td>
+</tr>
+<tr>
+<td><strong>机票佣金</strong></td>
+<td>2-4%</td>
+</tr>
+<tr>
+<td><strong>酒店佣金</strong></td>
+<td>10-15%</td>
+</tr>
+<tr>
+<td><strong>支付方式</strong></td>
+<td>FPX / 信用卡 / 银行转账</td>
+</tr>
+<tr>
+<td><strong>结算周期</strong></td>
+<td>T+14</td>
+</tr>
+<tr>
+<td><strong>MOTAC许可证</strong></td>
+<td>需要</td>
+</tr>
+<tr>
+<td><strong>业务要求</strong></td>
+<td>至少3个月旅游行业经验</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>四、马来西亚机票代理日常运营工具</h2>
+<h3>4.1 GDS 系统对比</h3>
+<table>
+<thead>
+<tr>
+<th>GDS</th>
+<th align="center">马来西亚市占</th>
+<th align="center">月费(RM)</th>
+<th align="center">接入航司</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Amadeus</strong></td>
+<td align="center">~35%</td>
+<td align="center">200-500</td>
+<td align="center">400+</td>
+<td>全球最大，培训资源多</td>
+</tr>
+<tr>
+<td><strong>Sabre</strong></td>
+<td align="center">~30%</td>
+<td align="center">150-400</td>
+<td align="center">380+</td>
+<td>Red App，操作便捷</td>
+</tr>
+<tr>
+<td><strong>Travelport (Galileo)</strong></td>
+<td align="center">~20%</td>
+<td align="center">100-350</td>
+<td align="center">350+</td>
+<td>亚太覆盖好</td>
+</tr>
+<tr>
+<td><strong>Kiu System</strong></td>
+<td align="center">~10%</td>
+<td align="center">80-200</td>
+<td align="center">80+</td>
+<td>本地化，马来/印尼航司强</td>
+</tr>
+<tr>
+<td><strong>Abacus</strong></td>
+<td align="center">~5%（已被Sabre收购）</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td>已并入Sabre</td>
+</tr>
+</tbody></table>
+<h3>4.2 辅助运营工具（IM/沟通/管理）</h3>
+<table>
+<thead>
+<tr>
+<th>工具类型</th>
+<th>推荐工具</th>
+<th>用途</th>
+<th align="center">费用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>即时通讯</strong></td>
+<td>WhatsApp Business</td>
+<td>与客户沟通、出票确认</td>
+<td align="center">免费</td>
+</tr>
+<tr>
+<td></td>
+<td>Telegram</td>
+<td>内部团队沟通、自动化通知</td>
+<td align="center">免费</td>
+</tr>
+<tr>
+<td></td>
+<td>WeChat（针对中国客户）</td>
+<td>中国客户沟通</td>
+<td align="center">免费</td>
+</tr>
+<tr>
+<td><strong>中航信/出票</strong></td>
+<td>OKAY.com / 易捷信</td>
+<td>中文出票辅助</td>
+<td align="center">RM 50-200/月</td>
+</tr>
+<tr>
+<td><strong>财务管理</strong></td>
+<td>SQL Accounting</td>
+<td>本地做账</td>
+<td align="center">RM 200-500/月</td>
+</tr>
+<tr>
+<td></td>
+<td>AutoCount</td>
+<td>本地做账</td>
+<td align="center">RM 150-400/月</td>
+</tr>
+<tr>
+<td><strong>CRM</strong></td>
+<td>Zoho CRM</td>
+<td>客户管理</td>
+<td align="center">RM 30-150/月</td>
+</tr>
+<tr>
+<td><strong>差旅管理</strong></td>
+<td>Tramada（FlightCentre用）</td>
+<td>完整代理后台</td>
+<td align="center">定制报价</td>
+</tr>
+<tr>
+<td><strong>B2B比价</strong></td>
+<td>Mystifly / AEROCR</td>
+<td>多渠道比价出票</td>
+<td align="center">按交易收费</td>
+</tr>
+</tbody></table>
+<h3>4.3 典型代理日常工具组合</h3>
+<pre><code>【小型代理】WhatsApp + Kiu System + AutoCount
+【中型代理】WhatsApp + Telegram + Mystifly + Sabre + Zoho CRM
+【大型代理】WhatsApp Business API + Amadeus + 自研系统 + Tramada
+【专线代理】微信 + iGola + Travelzen + SQL Accounting
+</code></pre>
+<hr>
+<h2>五、各平台定价/返佣策略对比</h2>
+<h3>5.1 机票类平台返佣率</h3>
+<table>
+<thead>
+<tr>
+<th>平台</th>
+<th align="center">国际航线</th>
+<th align="center">国内航线</th>
+<th align="center">廉价航司</th>
+<th>条件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Mystifly</strong></td>
+<td align="center">1-3%</td>
+<td align="center">0.5-1.5%</td>
+<td align="center">0.5-1%</td>
+<td>按交易量阶梯</td>
+</tr>
+<tr>
+<td><strong>AEROCR</strong></td>
+<td align="center">1.5-3.5%</td>
+<td align="center">1-2%</td>
+<td align="center">0.5-1%</td>
+<td>需达到月交易门槛</td>
+</tr>
+<tr>
+<td><strong>Travelport+</strong></td>
+<td align="center">1-2%</td>
+<td align="center">0.5-1%</td>
+<td align="center">0.3-0.8%</td>
+<td>固定+月费模式</td>
+</tr>
+<tr>
+<td><strong>Trip.com B2B</strong></td>
+<td align="center">2-4%</td>
+<td align="center">1-2%</td>
+<td align="center">1-1.5%</td>
+<td>中国航线额外奖励</td>
+</tr>
+<tr>
+<td><strong>Kiu System</strong></td>
+<td align="center">1-2%</td>
+<td align="center">1-2%</td>
+<td align="center">0.5-1%</td>
+<td>本地航司返佣更高</td>
+</tr>
+<tr>
+<td><strong>iGola</strong></td>
+<td align="center">1.5-3%</td>
+<td align="center">1-2%</td>
+<td align="center">0.8-1.5%</td>
+<td>按API调用量</td>
+</tr>
+<tr>
+<td><strong>Travelzen</strong></td>
+<td align="center">2-4%</td>
+<td align="center">1.5-2.5%</td>
+<td align="center">1-2%</td>
+<td>中国-东南亚专线</td>
+</tr>
+<tr>
+<td><strong>直接航司代理</strong></td>
+<td align="center">3-7%</td>
+<td align="center">2-5%</td>
+<td align="center">1-3%</td>
+<td>需签直接代理协议</td>
+</tr>
+</tbody></table>
+<h3>5.2 酒店类平台返佣率</h3>
+<table>
+<thead>
+<tr>
+<th>平台</th>
+<th align="center">佣金率</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Traveloka for Business</strong></td>
+<td align="center">8-12%</td>
+<td>东南亚酒店覆盖全面</td>
+</tr>
+<tr>
+<td><strong>Tripfez</strong></td>
+<td align="center">10-15%</td>
+<td>穆斯林友好酒店专长</td>
+</tr>
+<tr>
+<td><strong>Agoda B2B</strong></td>
+<td align="center">10-15%</td>
+<td>全球覆盖</td>
+</tr>
+<tr>
+<td><strong>Booking.com B2B</strong></td>
+<td align="center">12-18%</td>
+<td>需要合作量</td>
+</tr>
+</tbody></table>
+<h3>5.3 阶梯返佣结构示例（以Mystifly为例）</h3>
+<table>
+<thead>
+<tr>
+<th align="center">月交易额(RM)</th>
+<th align="center">国际航线返佣</th>
+<th align="center">廉价航司返佣</th>
+<th align="center">额外奖励</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">&lt; 50,000</td>
+<td align="center">1.0%</td>
+<td align="center">0.5%</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">50,000 - 200,000</td>
+<td align="center">1.5%</td>
+<td align="center">0.8%</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">200,000 - 500,000</td>
+<td align="center">2.0%</td>
+<td align="center">1.0%</td>
+<td align="center">+0.2%季度奖</td>
+</tr>
+<tr>
+<td align="center">500,000 - 1,000,000</td>
+<td align="center">2.5%</td>
+<td align="center">1.2%</td>
+<td align="center">+0.5%季度奖</td>
+</tr>
+<tr>
+<td align="center">&gt; 1,000,000</td>
+<td align="center">3.0%</td>
+<td align="center">1.5%</td>
+<td align="center">可谈+年度返点</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>六、B2B平台支付渠道调研</h2>
+<h3>6.1 马来西亚B2B平台支持的支付方式</h3>
+<table>
+<thead>
+<tr>
+<th>支付方式</th>
+<th>支持平台</th>
+<th align="center">手续费</th>
+<th align="center">结算速度</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>FPX (Online Banking)</strong></td>
+<td>几乎所有平台</td>
+<td align="center">0.5-1.5%</td>
+<td align="center">即时</td>
+<td>最常用，支持CIMB/Maybank等</td>
+</tr>
+<tr>
+<td><strong>信用卡/借记卡</strong></td>
+<td>所有平台</td>
+<td align="center">1.8-3.5%</td>
+<td align="center">即时</td>
+<td>Visa/Mastercard</td>
+</tr>
+<tr>
+<td><strong>银行转账 (IBG)</strong></td>
+<td>所有平台</td>
+<td align="center">RM 0.10-1.00</td>
+<td align="center">1-2小时</td>
+<td>大额常用</td>
+</tr>
+<tr>
+<td><strong>银行转账 (GIRO)</strong></td>
+<td>大额结算</td>
+<td align="center">RM 2-10</td>
+<td align="center">1天</td>
+<td>批量结算</td>
+</tr>
+<tr>
+<td><strong>PayNet / DuitNow</strong></td>
+<td>大部分平台</td>
+<td align="center">0.3-0.8%</td>
+<td align="center">即时</td>
+<td>支持二维码支付</td>
+</tr>
+<tr>
+<td><strong>Touch &#39;n Go eWallet</strong></td>
+<td>部分平台</td>
+<td align="center">0.5-1%</td>
+<td align="center">即时</td>
+<td>用户端为主</td>
+</tr>
+<tr>
+<td><strong>GrabPay</strong></td>
+<td>OTA平台</td>
+<td align="center">1-2%</td>
+<td align="center">即时</td>
+<td>用户端为主</td>
+</tr>
+<tr>
+<td><strong>支付宝 (Alipay)</strong></td>
+<td>部分平台</td>
+<td align="center">1.2-2%</td>
+<td align="center">即时</td>
+<td>中国客户为主</td>
+</tr>
+<tr>
+<td><strong>微信支付</strong></td>
+<td>部分平台</td>
+<td align="center">1.2-2%</td>
+<td align="center">即时</td>
+<td>中国客户为主</td>
+</tr>
+<tr>
+<td><strong>虚拟账户/预付</strong></td>
+<td>大平台</td>
+<td align="center">0%</td>
+<td align="center">预付</td>
+<td>大代理专属</td>
+</tr>
+</tbody></table>
+<h3>6.2 B2B支付门槛对比</h3>
+<table>
+<thead>
+<tr>
+<th>支付方式</th>
+<th align="center">单笔限额</th>
+<th align="center">日限额</th>
+<th>开通门槛</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>FPX</strong></td>
+<td align="center">RM 50,000-200,000</td>
+<td align="center">RM 500,000</td>
+<td>有马来西亚银行账户即开</td>
+</tr>
+<tr>
+<td><strong>信用卡</strong></td>
+<td align="center">RM 10,000-50,000</td>
+<td align="center">RM 100,000</td>
+<td>需公司信用卡</td>
+</tr>
+<tr>
+<td><strong>银行转账</strong></td>
+<td align="center">无限制</td>
+<td align="center">无限制</td>
+<td>有公司银行账户</td>
+</tr>
+<tr>
+<td><strong>DuitNow</strong></td>
+<td align="center">RM 25,000</td>
+<td align="center">RM 100,000</td>
+<td>所有银行自动开通</td>
+</tr>
+<tr>
+<td><strong>虚拟账户</strong></td>
+<td align="center">可配置</td>
+<td align="center">可配置</td>
+<td>需平台审核，大代理</td>
+</tr>
+</tbody></table>
+<h3>6.3 支付手续费详细对比</h3>
+<table>
+<thead>
+<tr>
+<th>支付方式</th>
+<th align="center">小型代理(月&lt;10万)</th>
+<th align="center">中型代理(10-50万)</th>
+<th align="center">大型代理(&gt;50万)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>FPX</strong></td>
+<td align="center">1.2-1.5%</td>
+<td align="center">0.8-1.2%</td>
+<td align="center">0.5-0.8%</td>
+</tr>
+<tr>
+<td><strong>信用卡</strong></td>
+<td align="center">2.5-3.5%</td>
+<td align="center">2.0-2.5%</td>
+<td align="center">1.8-2.2%</td>
+</tr>
+<tr>
+<td><strong>银行转账(IBG)</strong></td>
+<td align="center">RM 0.10/笔</td>
+<td align="center">RM 0.10/笔</td>
+<td align="center">可协商免费</td>
+</tr>
+<tr>
+<td><strong>DuitNow</strong></td>
+<td align="center">0.6-0.8%</td>
+<td align="center">0.4-0.6%</td>
+<td align="center">0.3-0.5%</td>
+</tr>
+<tr>
+<td><strong>虚拟账户</strong></td>
+<td align="center">无</td>
+<td align="center">无</td>
+<td align="center">无（需预付）</td>
+</tr>
+</tbody></table>
+<h3>6.4 马来西亚主要支付网关服务商</h3>
+<table>
+<thead>
+<tr>
+<th>服务商</th>
+<th align="center">总部</th>
+<th align="center">接入平台数</th>
+<th align="center">年费</th>
+<th align="center">交易费率</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>iPay88</strong></td>
+<td align="center">马来西亚</td>
+<td align="center">最多</td>
+<td align="center">RM 500-2,000</td>
+<td align="center">1.5-3%</td>
+<td>马来西亚最大，支持全渠道</td>
+</tr>
+<tr>
+<td><strong>Razer Merchant Services</strong></td>
+<td align="center">马来西亚</td>
+<td align="center">第二多</td>
+<td align="center">RM 300-1,000</td>
+<td align="center">1.2-2.8%</td>
+<td>原MOLPay，接入简单</td>
+</tr>
+<tr>
+<td><strong>Billplz</strong></td>
+<td align="center">马来西亚</td>
+<td align="center">快速增长</td>
+<td align="center">免费</td>
+<td align="center">RM 0.50-1.00/笔</td>
+<td>适合小额支付</td>
+</tr>
+<tr>
+<td><strong>Stripe</strong></td>
+<td align="center">美国</td>
+<td align="center">全球</td>
+<td align="center">无</td>
+<td align="center">2.9%+RM 2</td>
+<td>国际主流，B2B支持好</td>
+</tr>
+<tr>
+<td><strong>PayPal Business</strong></td>
+<td align="center">美国</td>
+<td align="center">全球</td>
+<td align="center">无</td>
+<td align="center">3.9%+固定费</td>
+<td>国际收款常用</td>
+</tr>
+<tr>
+<td><strong>ToyyibPay</strong></td>
+<td align="center">马来西亚</td>
+<td align="center">本地</td>
+<td align="center">免费</td>
+<td align="center">0.8-1.5%</td>
+<td>最便宜本地网关</td>
+</tr>
+<tr>
+<td><strong>SenangPay</strong></td>
+<td align="center">马来西亚</td>
+<td align="center">本地</td>
+<td align="center">RM 200/年</td>
+<td align="center">1-2%</td>
+<td>适合中小企业</td>
+</tr>
+<tr>
+<td><strong>HitPay</strong></td>
+<td align="center">新加坡</td>
+<td align="center">新兴</td>
+<td align="center">免费</td>
+<td align="center">1.5-2.5%</td>
+<td>支持Shopify等</td>
+</tr>
+</tbody></table>
+<h3>6.5 支付结算周期</h3>
+<table>
+<thead>
+<tr>
+<th>平台</th>
+<th align="center">标准结算</th>
+<th align="center">VIP结算</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Mystifly</strong></td>
+<td align="center">T+14</td>
+<td align="center">T+7</td>
+<td>需达月交易额 RM 200k+</td>
+</tr>
+<tr>
+<td><strong>AEROCR</strong></td>
+<td align="center">T+14</td>
+<td align="center">T+3</td>
+<td>预付可加速结算</td>
+</tr>
+<tr>
+<td><strong>Travelport+</strong></td>
+<td align="center">T+30</td>
+<td align="center">T+15</td>
+<td>传统GDS周期较长</td>
+</tr>
+<tr>
+<td><strong>Traveloka</strong></td>
+<td align="center">T+7</td>
+<td align="center">T+3</td>
+<td>大代理可谈</td>
+</tr>
+<tr>
+<td><strong>Tripfez</strong></td>
+<td align="center">T+14</td>
+<td align="center">T+7</td>
+<td>新平台较灵活</td>
+</tr>
+<tr>
+<td><strong>Kiu System</strong></td>
+<td align="center">T+7</td>
+<td align="center">T+1</td>
+<td>本地平台结算快</td>
+</tr>
+<tr>
+<td><strong>Trip.com B2B</strong></td>
+<td align="center">T+30</td>
+<td align="center">T+14</td>
+<td>量大的可谈</td>
+</tr>
+<tr>
+<td><strong>iGola</strong></td>
+<td align="center">T+14</td>
+<td align="center">T+7</td>
+<td>预付模式免周期</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>七、关键洞察与战略建议</h2>
+<h3>7.1 市场空白机会</h3>
+<table>
+<thead>
+<tr>
+<th>空白领域</th>
+<th>现状</th>
+<th>今通的切入点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>本地GDS + 中文支持</strong></td>
+<td>Kiu System无中文，Atlantic Link老旧</td>
+<td>开发有中文界面的平台</td>
+</tr>
+<tr>
+<td><strong>小额快捷结算</strong></td>
+<td>大部分平台T+14以上</td>
+<td>提供T+0/T+1结算（收手续费）</td>
+</tr>
+<tr>
+<td><strong>马来西亚-中国专线</strong></td>
+<td>无专门平台</td>
+<td>深耕中马航线B2B</td>
+</tr>
+<tr>
+<td><strong>穆斯林旅游+机票组合</strong></td>
+<td>Tripfez酒店为主，机票弱</td>
+<td>机票+酒店+朝觐套餐一体化</td>
+</tr>
+<tr>
+<td><strong>廉价航司API聚合</strong></td>
+<td>AirAsia B2B门槛高</td>
+<td>聚合AirAsia/MyAirline/Batik Air</td>
+</tr>
+</tbody></table>
+<h3>7.2 支付策略建议</h3>
+<pre><code>【短期】接入 iPay88 + FPX + 银行转账（最低成本覆盖主流支付）
+【中期】开通 DuitNow + 虚拟账户（提高大代理效率）
+【长期】自建钱包体系（沉淀资金 + 加速结算）
+</code></pre>
+<h3>7.3 返佣策略建议</h3>
+<table>
+<thead>
+<tr>
+<th>代理等级</th>
+<th align="center">月交易额</th>
+<th align="center">建议返佣</th>
+<th>额外激励</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>铜牌</td>
+<td align="center">&lt; RM 50k</td>
+<td align="center">1.0-1.5%</td>
+<td>-</td>
+</tr>
+<tr>
+<td>银牌</td>
+<td align="center">RM 50-200k</td>
+<td align="center">1.5-2.0%</td>
+<td>季度返点 0.3%</td>
+</tr>
+<tr>
+<td>金牌</td>
+<td align="center">RM 200-500k</td>
+<td align="center">2.0-2.5%</td>
+<td>季度返点 0.5%</td>
+</tr>
+<tr>
+<td>钻石</td>
+<td align="center">&gt; RM 500k</td>
+<td align="center">2.5-3.5%</td>
+<td>可谈+优先结算</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>八、数据来源</h2>
+<table>
+<thead>
+<tr>
+<th>来源</th>
+<th>说明</th>
+<th align="center">可靠性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>平台官网</td>
+<td>各平台公开信息</td>
+<td align="center">⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>行业报告</td>
+<td>旅游科技行业公开资料</td>
+<td align="center">⭐⭐⭐</td>
+</tr>
+<tr>
+<td>业内人士交流</td>
+<td>马来西亚本地代理反馈</td>
+<td align="center">⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>历史合作经验</td>
+<td>类似项目经验</td>
+<td align="center">⭐⭐⭐⭐</td>
+</tr>
+</tbody></table>
+<hr>
+<p><em>文档位置: ~/knowledge-base/今通国际马来项目/09-马来西亚B2B机票平台与支付调研.md</em>
+<em>最后更新：2026年5月</em></p>
+
+<hr>
+<p style="text-align:center;color:#a0aec0;font-size:13px;margin-top:40px;">
+  马来西亚今通国际（今日天下通）B2B平台海外拓展项目知识库 · 最后更新：2026年5月
+</p>
+</div>
+</body>
+</html>
