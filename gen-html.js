@@ -13,7 +13,8 @@ const files = [
   '06-竞争对手调研报告.md',
   '07-TikTok-TAP-MCN市场调研.md',
   '08-微信推送服务说明.md',
-  '09-马来西亚B2B机票平台与支付调研.md'
+  '09-马来西亚B2B机票平台与支付调研.md',
+  '10-海外品牌TripNexus Global商业计划书.md'
 ];
 
 const fileNames = {
@@ -26,7 +27,8 @@ const fileNames = {
   '06-竞争对手调研报告.md': '🔍 竞争对手调研',
   '07-TikTok-TAP-MCN市场调研.md': '📱 TikTok TAP/MCN调研',
   '08-微信推送服务说明.md': '📬 微信推送服务',
-  '09-马来西亚B2B机票平台与支付调研.md': '✈️ B2B机票平台调研'
+  '09-马来西亚B2B机票平台与支付调研.md': '✈️ B2B机票平台调研',
+  '10-海外品牌TripNexus Global商业计划书.md': '🌐 TripNexus Global BP'
 };
 
 function genNav(currentFile) {
